@@ -6,6 +6,7 @@ Keep in mind that text in the frontend is written in german, since i'am a german
 ## Run the project
 Use the following commands in the terminal to run the project:
 ```
+nvm use 21
 cd caesar-algorithm
 npm install
 npm run dev
