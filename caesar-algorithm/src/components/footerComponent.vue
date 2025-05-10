@@ -14,7 +14,7 @@
         >
           Checkout the repository</a
         >
-        <img src="../assets/github-logo.png" class="github-logo" />
+        <img src="../assets/images/github-logo.png" class="github-logo" />
       </div>
     </footer>
   </div>

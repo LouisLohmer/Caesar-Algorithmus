@@ -3,12 +3,12 @@
 <template>
   <div class="image-constellation-container" id="image-constellation">
     <img
-      src="../assets/caesar-cipher-2.png"
+      src="../assets/images/caesar-cipher-2.png"
       class="caesar-cipher-background-image"
     />
-    <img src="../assets/caesar-cipher.png" class="caesar-cipher-image" />
+    <img src="../assets/images/caesar-cipher.png" class="caesar-cipher-image" />
     <img
-      src="../assets/caesar-statue.png"
+      src="../assets/images/caesar-statue.png"
       class="caesar-cipher-background-image-2"
     />
   </div>
