@@ -1,5 +1,9 @@
-<script setup></script>
+<script setup>
+import startScreen from "./components/startScreen.vue";
+</script>
 
-<template></template>
+<template>
+  <startScreen></startScreen>
+</template>
 
 <style scoped></style>

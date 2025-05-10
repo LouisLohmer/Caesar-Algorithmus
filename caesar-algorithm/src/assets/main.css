@@ -1,7 +1,13 @@
-@import './base.css';
+@import "./base.css";
 
-#app {
-    max-width: 1280px;
-    margin: 0 auto;
-    font-weight: normal;
+button {
+  border: none;
+  cursor: pointer;
+  padding: 5px 20px 5px 20px;
+  border-radius: 15px;
+}
+
+h1 {
+  font-size: 35px;
+  margin: 0;
 }
