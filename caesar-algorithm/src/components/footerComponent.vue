@@ -37,7 +37,7 @@ footer {
   border-top: 3px solid var(--imperial-gold);
   border-radius: 20px;
   padding: 15px 25px 15px 25px;
-  margin: 15px 25px 0 25px;
+  margin: 100px 25px 0 25px;
   display: flex;
   justify-content: center;
   align-items: center;
