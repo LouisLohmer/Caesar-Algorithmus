@@ -116,8 +116,4 @@ header {
   padding: 15px 25px 15px 25px;
   margin-bottom: 30px;
 }
-
-h1 {
-  color: var(--imperial-gold);
-}
 </style>
