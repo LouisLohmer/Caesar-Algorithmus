@@ -35,6 +35,7 @@
 
 footer {
   border-top: 3px solid var(--imperial-gold);
+  outline: 3px solid var(--royalblue);
   border-radius: 20px;
   padding: 15px 25px 15px 25px;
   margin: 100px 25px 0 25px;

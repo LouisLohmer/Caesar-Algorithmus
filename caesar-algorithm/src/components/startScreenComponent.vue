@@ -37,11 +37,18 @@
   height: 30%;
   z-index: 10;
   filter: blur(8px);
+  transition: all 5s ease-out;
 }
 
 .caesar-cipher-background-image {
   left: 220px;
   top: 50px;
+}
+.caesar-cipher-background-image:hover,
+.caesar-cipher-background-image-2:hover {
+  transition: all 5s ease-out;
+  filter: blur(0px);
+  cursor: pointer;
 }
 
 .caesar-cipher-background-image-2 {
