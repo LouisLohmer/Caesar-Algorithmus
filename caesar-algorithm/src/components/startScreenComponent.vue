@@ -1,66 +1,51 @@
 <script setup></script>
 
 <template>
-  <header>
-    <nav>
-      <h1>Caesar-Algorithmus</h1>
-
-      <div>
-        <button class="closeStartScreen">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 32 32"
-            class="arrow-icon-forward"
-          >
-            <path
-              d="m26.71 10.29-10-10a1 1 0 0 0-1.41 0l-10 10 1.41 1.41L15 3.41V32h2V3.41l8.29 8.29z"
-            />
-          </svg>
-        </button>
-        <button class="openStartScreen">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 32 32"
-            class="arrow-icon-backwards"
-          >
-            <path
-              d="m26.71 10.29-10-10a1 1 0 0 0-1.41 0l-10 10 1.41 1.41L15 3.41V32h2V3.41l8.29 8.29z"
-            />
-          </svg>
-        </button>
-      </div>
-    </nav>
-  </header>
+  <div class="centered-container">
+    <img
+      src="../assets/caesar-cipher-2.png"
+      class="caesar-cipher-background-image"
+    />
+    <img src="../assets/caesar-cipher.png" class="caesar-cipher-image" />
+    <img
+      src="../assets/caesar-statue.png"
+      class="caesar-cipher-background-image-2"
+    />
+  </div>
 </template>
 
 <style scoped>
-.arrow-icon-forward {
-  fill: var(--white);
-  height: 30px;
-  width: 30px;
-  transform: rotate(90deg);
+.caesar-cipher-image {
+  border-radius: 20px;
+  width: 30%;
+  height: 30%;
+  z-index: 20;
 }
 
-.arrow-icon-backwards {
-  fill: var(--white);
-  height: 30px;
-  width: 30px;
-  transform: rotate(270deg);
-}
-
-.closeStartScreen,
-.openStartScreen {
-  background-color: var(--gold);
-}
-
-nav {
+.centered-container {
+  margin: auto 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  padding: 10px 25px 10px 25px;
 }
 
-h1 {
-  color: var(--green);
+.caesar-cipher-background-image-2,
+.caesar-cipher-background-image {
+  position: relative;
+  border-radius: 20px;
+  width: 30%;
+  height: 30%;
+  z-index: 10;
+  filter: blur(8px);
+}
+
+.caesar-cipher-background-image {
+  left: 220px;
+  top: 50px;
+}
+
+.caesar-cipher-background-image-2 {
+  right: 220px;
+  top: 50px;
 }
 </style>
