@@ -1,13 +1,15 @@
-/* color palette from <https://github.com/vuejs/theme> */
 :root {
   /* global colors */
   --white: #f8f8f8;
   --black: #232023;
+  --dark-grey: #f5f5f5;
   --gold: #ffb343;
+  --red: red;
   --green: #42b883;
 
   /* font-size */
   --text-font: 15px;
+  --big-text-font: 25px;
 }
 
 body {

@@ -1,9 +1,11 @@
 <script setup>
-import startScreen from "./components/startScreen.vue";
+import startScreenComponent from "./components/startScreenComponent.vue";
+import footerComponent from "./components/footerComponent.vue";
 </script>
 
 <template>
-  <startScreen></startScreen>
+  <startScreenComponent></startScreenComponent>
+  <footerComponent></footerComponent>
 </template>
 
 <style scoped></style>

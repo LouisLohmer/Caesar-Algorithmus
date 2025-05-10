@@ -60,10 +60,6 @@ nav {
   padding: 10px 25px 10px 25px;
 }
 
-header {
-  width: 100%;
-}
-
 h1 {
   color: var(--green);
 }
