@@ -1,0 +1,115 @@
+<script setup>
+function toggleVisibilityOfStartScreen() {
+  let imageConstellationContainer = document.getElementById(
+    "image-constellation"
+  );
+  let closeStartScreenButton = document.getElementById(
+    "close-start-screen-button"
+  );
+  let openStartScreenButton = document.getElementById(
+    "open-start-screen-button"
+  );
+  let mainContentContainer = document.getElementById("main-content");
+
+  if (!imageConstellationContainer.classList.contains("hidden")) {
+    imageConstellationContainer.classList.add("hidden");
+  } else {
+    imageConstellationContainer.classList.remove("hidden");
+  }
+
+  if (!closeStartScreenButton.classList.contains("hidden")) {
+    closeStartScreenButton.classList.add("hidden");
+  } else {
+    closeStartScreenButton.classList.remove("hidden");
+  }
+
+  if (!openStartScreenButton.classList.contains("hidden")) {
+    openStartScreenButton.classList.add("hidden");
+  } else {
+    openStartScreenButton.classList.remove("hidden");
+  }
+
+  if (!mainContentContainer.classList.contains("hidden")) {
+    mainContentContainer.classList.add("hidden");
+  } else {
+    mainContentContainer.classList.remove("hidden");
+  }
+}
+</script>
+
+<template>
+  <header>
+    <nav>
+      <h1>Caesar-Algorithmus</h1>
+
+      <div>
+        <button
+          class="close-start-screen"
+          id="close-start-screen-button"
+          @click="toggleVisibilityOfStartScreen"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 32 32"
+            class="arrow-icon-forward"
+          >
+            <path
+              d="m26.71 10.29-10-10a1 1 0 0 0-1.41 0l-10 10 1.41 1.41L15 3.41V32h2V3.41l8.29 8.29z"
+            />
+          </svg>
+        </button>
+        <button
+          class="open-start-screen hidden"
+          id="open-start-screen-button"
+          @click="toggleVisibilityOfStartScreen"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 32 32"
+            class="arrow-icon-backwards"
+          >
+            <path
+              d="m26.71 10.29-10-10a1 1 0 0 0-1.41 0l-10 10 1.41 1.41L15 3.41V32h2V3.41l8.29 8.29z"
+            />
+          </svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+</template>
+
+<style scoped>
+.arrow-icon-forward {
+  fill: var(--marble-white);
+  height: 30px;
+  width: 30px;
+  transform: rotate(90deg);
+}
+
+.arrow-icon-backwards {
+  fill: var(--marble-white);
+  height: 30px;
+  width: 30px;
+  transform: rotate(270deg);
+}
+
+.close-start-screen,
+.open-start-screen {
+  background-color: var(--royalblue);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header {
+  padding: 15px 25px 15px 25px;
+  margin-bottom: 30px;
+}
+
+h1 {
+  color: var(--imperial-gold);
+}
+</style>
