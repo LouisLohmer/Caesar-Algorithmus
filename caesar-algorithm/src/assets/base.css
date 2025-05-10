@@ -9,6 +9,8 @@
   /* font-size */
   --text-font: 15px;
   --big-text-font: 25px;
+  --h1-font: 35px;
+  --h2-font: 25px;
 }
 
 body {

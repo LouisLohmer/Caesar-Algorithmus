@@ -98,6 +98,14 @@ function toggleVisibilityOfStartScreen() {
   background-color: var(--royalblue);
 }
 
+.open-start-screen:hover .arrow-icon-backwards {
+  fill: var(--imperial-gold);
+}
+
+.close-start-screen:hover .arrow-icon-forward {
+  fill: var(--imperial-gold);
+}
+
 nav {
   display: flex;
   justify-content: space-between;
