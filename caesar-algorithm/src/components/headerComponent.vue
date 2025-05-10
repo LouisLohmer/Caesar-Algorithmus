@@ -1,4 +1,41 @@
-<script setup></script>
+<script setup>
+function toggleVisibilityOfStartScreen() {
+  let imageConstellationContainer = document.getElementById(
+    "image-constellation"
+  );
+  let closeStartScreenButton = document.getElementById(
+    "close-start-screen-button"
+  );
+  let openStartScreenButton = document.getElementById(
+    "open-start-screen-button"
+  );
+  let mainContentContainer = document.getElementById("main-content");
+
+  if (!imageConstellationContainer.classList.contains("hidden")) {
+    imageConstellationContainer.classList.add("hidden");
+  } else {
+    imageConstellationContainer.classList.remove("hidden");
+  }
+
+  if (!closeStartScreenButton.classList.contains("hidden")) {
+    closeStartScreenButton.classList.add("hidden");
+  } else {
+    closeStartScreenButton.classList.remove("hidden");
+  }
+
+  if (!openStartScreenButton.classList.contains("hidden")) {
+    openStartScreenButton.classList.add("hidden");
+  } else {
+    openStartScreenButton.classList.remove("hidden");
+  }
+
+  if (!mainContentContainer.classList.contains("hidden")) {
+    mainContentContainer.classList.add("hidden");
+  } else {
+    mainContentContainer.classList.remove("hidden");
+  }
+}
+</script>
 
 <template>
   <header>
@@ -6,7 +43,11 @@
       <h1>Caesar-Algorithmus</h1>
 
       <div>
-        <button class="closeStartScreen">
+        <button
+          class="close-start-screen"
+          id="close-start-screen-button"
+          @click="toggleVisibilityOfStartScreen"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 32 32"
@@ -17,7 +58,11 @@
             />
           </svg>
         </button>
-        <button class="openStartScreen">
+        <button
+          class="open-start-screen hidden"
+          id="open-start-screen-button"
+          @click="toggleVisibilityOfStartScreen"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 32 32"
@@ -48,8 +93,8 @@
   transform: rotate(270deg);
 }
 
-.closeStartScreen,
-.openStartScreen {
+.close-start-screen,
+.open-start-screen {
   background-color: var(--royalblue);
 }
 

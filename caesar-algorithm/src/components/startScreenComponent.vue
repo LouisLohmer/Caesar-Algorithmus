@@ -1,7 +1,7 @@
 <script setup></script>
 
 <template>
-  <div class="centered-container">
+  <div class="image-constellation-container" id="image-constellation">
     <img
       src="../assets/caesar-cipher-2.png"
       class="caesar-cipher-background-image"
@@ -22,7 +22,7 @@
   z-index: 20;
 }
 
-.centered-container {
+.image-constellation-container {
   margin: auto 0;
   display: flex;
   justify-content: center;
