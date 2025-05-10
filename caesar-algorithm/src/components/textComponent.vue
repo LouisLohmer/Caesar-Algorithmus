@@ -23,13 +23,13 @@
       <li>
         <b>Klartext verschlüsslen:</b> Jeder Buchstabe wird um den festgelegten
         Schlüssel im Alphabet verschoben und zu einem Text zusammengesetzt. Zum
-        Beispiel wird aus <b>"Geheimnis"</b> dann <b>"JHKKHLPLV"</b>.
+        Beispiel wird aus <b>"Geheimnis"</b> dann <b>"JHKHLPqLV"</b>.
       </li>
       <li>
         <b>Verschlüsselten Text entschlüsslen:</b> Beim Entschlüsseln wird der
         verschlüsselte Text um denselben Schlüssel nach links im Alphabet
         verschoben, um den Originaltext zurückzugewinnen. Zum Beispiel wird aus
-        <b>"JHKKHLPLV"</b> dann wieder <b>"Geheimnis"</b>.
+        <b>"JHKHLPqLV"</b> dann wieder <b>"Geheimnis"</b>.
       </li>
     </ol>
   </div>
