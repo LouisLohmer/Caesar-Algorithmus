@@ -28,41 +28,42 @@ function encryptText() {
     "y",
     "z",
   ];
+  const onlyLettersRegEx = /^[a-zA-Z]+$/;
   let encryptedTextMessage = "";
   let textarea = document.getElementById("encryption-textarea");
   let decryptedTextMessage = textarea.value.split("");
   let options = document.getElementById("select-encryption-key").options;
   let encryptionKey = options[options.selectedIndex].id;
   let encryptedTextElement = document.getElementById("encrypted-text");
-  let indexEncryptedLetter;
 
   for (let i = 0; i < decryptedTextMessage.length; i++) {
-    let indexDecryptedLetter = alphabet.indexOf(
-      decryptedTextMessage[i].toLowerCase()
-    );
+    let decryptedLetter = decryptedTextMessage[i].toLowerCase();
+    let indexDecryptedLetter = alphabet.indexOf(decryptedLetter);
 
-    for (let a = 0; a < encryptionKey; a++) {
-      // Bei Verschlüsseln: indexDecryptedLetter === 25, indexDecryptedLetter = 0;,indexDecryptedLetter++;
-      if (indexDecryptedLetter === 0) {
-        indexDecryptedLetter = 25;
-      } else {
-        indexDecryptedLetter--;
+    if (!decryptedLetter.match(onlyLettersRegEx)) {
+      encryptedTextMessage = encryptedTextMessage += decryptedLetter;
+    } else {
+      for (let a = 0; a < encryptionKey; a++) {
+        // Bei Verschlüsseln: indexDecryptedLetter === 25, indexDecryptedLetter = 0;,indexDecryptedLetter++;
+        if (indexDecryptedLetter === 0) {
+          indexDecryptedLetter = 25;
+        } else {
+          indexDecryptedLetter--;
+        }
       }
-    }
 
-    encryptedTextMessage = encryptedTextMessage +=
-      alphabet[indexDecryptedLetter];
+      encryptedTextMessage = encryptedTextMessage +=
+        alphabet[indexDecryptedLetter];
+    }
   }
 
   encryptedTextElement.innerHTML = encryptedTextMessage;
 }
 
 function validateUserInput() {
-  const onlyLettersRegEx = /^[a-zA-Z]+$/;
   let errorMessageTextElement = document.getElementById("error-message");
   let textarea = document.getElementById("encryption-textarea");
   let textMessage = textarea.value;
-  let splittedTextMessage = textarea.value.split("");
   let options = document.getElementById("select-encryption-key").options;
   let selectedOptionId = options[options.selectedIndex].id;
 
@@ -73,17 +74,10 @@ function validateUserInput() {
     errorMessageTextElement.innerHTML = "";
   }
 
-  for (let i = 0; i < splittedTextMessage.length; i++) {
-    if (!splittedTextMessage[i].match(onlyLettersRegEx)) {
-      errorMessageTextElement.innerHTML =
-        "Das Textfeld darf nur Buchstaben enthalten!";
-      return;
-    }
-  }
-
   if (selectedOptionId === "null") {
     errorMessageTextElement.innerHTML =
       "Wähle bitte einen validen Schlüssel aus!";
+    return;
   } else {
     errorMessageTextElement.innerHTML = "";
   }
@@ -180,6 +174,7 @@ h2 {
 
 .encrypted-text {
   padding-top: 20px;
+  width: 375px;
 }
 
 .error-message {
