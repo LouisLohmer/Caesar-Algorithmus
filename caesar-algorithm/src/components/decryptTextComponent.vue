@@ -29,19 +29,19 @@ function encryptText() {
     "z",
   ];
   const onlyLettersRegEx = /^[a-zA-Z]+$/;
-  let encryptedTextMessage = "";
-  let textarea = document.getElementById("encryption-textarea");
-  let decryptedTextMessage = textarea.value.split("");
-  let options = document.getElementById("select-encryption-key").options;
-  let encryptionKey = options[options.selectedIndex].id;
+  let textareaElement = document.getElementById("encryption-textarea");
+  let decryptedText = textareaElement.value.split("");
+  let optionElements = document.getElementById("select-encryption-key").options;
+  let encryptionKey = optionElements[optionElements.selectedIndex].id;
   let encryptedTextElement = document.getElementById("encrypted-text");
+  let encryptedText = "";
 
-  for (let i = 0; i < decryptedTextMessage.length; i++) {
-    let decryptedLetter = decryptedTextMessage[i].toLowerCase();
+  for (let i = 0; i < decryptedText.length; i++) {
+    let decryptedLetter = decryptedText[i].toLowerCase();
     let indexDecryptedLetter = alphabet.indexOf(decryptedLetter);
 
     if (!decryptedLetter.match(onlyLettersRegEx)) {
-      encryptedTextMessage = encryptedTextMessage += decryptedLetter;
+      encryptedText = encryptedText += decryptedLetter;
     } else {
       for (let a = 0; a < encryptionKey; a++) {
         // Bei Verschlüsseln: indexDecryptedLetter === 25, indexDecryptedLetter = 0;,indexDecryptedLetter++;
@@ -52,34 +52,32 @@ function encryptText() {
         }
       }
 
-      encryptedTextMessage = encryptedTextMessage +=
-        alphabet[indexDecryptedLetter];
+      encryptedText = encryptedText += alphabet[indexDecryptedLetter];
     }
   }
 
-  encryptedTextElement.innerHTML = encryptedTextMessage;
+  encryptedTextElement.innerHTML = encryptedText;
 }
 
 function validateUserInput() {
-  let errorMessageTextElement = document.getElementById("error-message");
-  let textarea = document.getElementById("encryption-textarea");
-  let textMessage = textarea.value;
-  let options = document.getElementById("select-encryption-key").options;
-  let selectedOptionId = options[options.selectedIndex].id;
+  let errorMessageElement = document.getElementById("error-message");
+  let textareaElement = document.getElementById("encryption-textarea");
+  let text = textareaElement.value;
+  let optionElements = document.getElementById("select-encryption-key").options;
+  let idSelectedOptionElement = optionElements[optionElements.selectedIndex].id;
 
-  if (textMessage.length === 0) {
-    errorMessageTextElement.innerHTML = "Das Textfeld darf nicht leer sein!";
+  if (text.length === 0) {
+    errorMessageElement.innerHTML = "Das Textfeld darf nicht leer sein!";
     return;
   } else {
-    errorMessageTextElement.innerHTML = "";
+    errorMessageElement.innerHTML = "";
   }
 
-  if (selectedOptionId === "null") {
-    errorMessageTextElement.innerHTML =
-      "Wähle bitte einen validen Schlüssel aus!";
+  if (idSelectedOptionElement === "null") {
+    errorMessageElement.innerHTML = "Wähle bitte einen validen Schlüssel aus!";
     return;
   } else {
-    errorMessageTextElement.innerHTML = "";
+    errorMessageElement.innerHTML = "";
   }
 
   encryptText();
