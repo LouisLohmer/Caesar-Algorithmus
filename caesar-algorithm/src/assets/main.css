@@ -24,6 +24,7 @@ h2 {
 
 #app {
   background-color: var(--black);
+  overflow-y: hidden;
 }
 
 textarea {
