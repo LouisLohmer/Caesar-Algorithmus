@@ -35,52 +35,38 @@ function toggleVisibilityOfStartScreen() {
     mainContentContainer.classList.remove("hidden");
   }
 
-  toggleTypewriterAnimation();
+  toggleAnimations();
 }
 
-function toggleTypewriterAnimation() {
-  console.log("hello there");
-  let animatedElement1 = document.getElementById("animated-element");
-  let animatedElement2 = document.getElementById("animated-element-2");
-  let animatedElement3 = document.getElementById("animated-element-3");
-  let animatedElement4 = document.getElementById("animated-element-4");
-  let animatedElement5 = document.getElementById("animated-element-5");
-  let animatedElement6 = document.getElementById("animated-element-6");
+function toggleAnimations() {
+  let firstAnimatedElement = document.getElementById("animated-element");
+  let secondAnimatedElement = document.getElementById("animated-element-2");
+  let thirdAnimatedElement = document.getElementById("animated-element-3");
+  let fourthAnimatedElement = document.getElementById("animated-element-4");
+  let fifthAnimatedElement = document.getElementById("animated-element-5");
+  let sixthAnimatedElement = document.getElementById("animated-element-6");
 
-  if (!animatedElement1.classList.contains("typewriter-animaton")) {
-    animatedElement1.classList.add("typewriter-animaton");
+  if (
+    !firstAnimatedElement.classList.contains("typewriter-animaton") &&
+    !secondAnimatedElement.classList.contains("typewriter-animaton") &&
+    !thirdAnimatedElement.classList.contains("typewriter-animaton") &&
+    !fourthAnimatedElement.classList.contains("typewriter-animaton") &&
+    !fifthAnimatedElement.classList.contains("typewriter-animaton") &&
+    !sixthAnimatedElement.classList.contains("typewriter-animaton")
+  ) {
+    firstAnimatedElement.classList.add("typewriter-animaton");
+    secondAnimatedElement.classList.add("typewriter-animaton");
+    thirdAnimatedElement.classList.add("typewriter-animaton");
+    fourthAnimatedElement.classList.add("typewriter-animaton");
+    fifthAnimatedElement.classList.add("typewriter-animaton");
+    sixthAnimatedElement.classList.add("blink-caret-animation");
   } else {
-    animatedElement1.classList.remove("typewriter-animaton");
-  }
-
-  if (!animatedElement2.classList.contains("typewriter-animaton")) {
-    animatedElement2.classList.add("typewriter-animaton");
-  } else {
-    animatedElement2.classList.remove("typewriter-animaton");
-  }
-
-  if (!animatedElement3.classList.contains("typewriter-animaton")) {
-    animatedElement3.classList.add("typewriter-animaton");
-  } else {
-    animatedElement3.classList.remove("typewriter-animaton");
-  }
-
-  if (!animatedElement4.classList.contains("typewriter-animaton")) {
-    animatedElement4.classList.add("typewriter-animaton");
-  } else {
-    animatedElement4.classList.remove("typewriter-animaton");
-  }
-
-  if (!animatedElement5.classList.contains("typewriter-animaton")) {
-    animatedElement5.classList.add("typewriter-animaton");
-  } else {
-    animatedElement5.classList.remove("typewriter-animaton");
-  }
-
-  if (!animatedElement6.classList.contains("typewriter-animaton")) {
-    animatedElement6.classList.add("blink-caret-animation");
-  } else {
-    animatedElement6.classList.remove("blink-caret-animation");
+    firstAnimatedElement.classList.remove("typewriter-animaton");
+    secondAnimatedElement.classList.remove("typewriter-animaton");
+    thirdAnimatedElement.classList.remove("typewriter-animaton");
+    fourthAnimatedElement.classList.remove("typewriter-animaton");
+    fifthAnimatedElement.classList.remove("typewriter-animaton");
+    sixthAnimatedElement.classList.remove("blink-caret-animation");
   }
 }
 </script>
