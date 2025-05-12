@@ -34,6 +34,54 @@ function toggleVisibilityOfStartScreen() {
   } else {
     mainContentContainer.classList.remove("hidden");
   }
+
+  toggleTypewriterAnimation();
+}
+
+function toggleTypewriterAnimation() {
+  console.log("hello there");
+  let animatedElement1 = document.getElementById("animated-element");
+  let animatedElement2 = document.getElementById("animated-element-2");
+  let animatedElement3 = document.getElementById("animated-element-3");
+  let animatedElement4 = document.getElementById("animated-element-4");
+  let animatedElement5 = document.getElementById("animated-element-5");
+  let animatedElement6 = document.getElementById("animated-element-6");
+
+  if (!animatedElement1.classList.contains("typewriter-animaton")) {
+    animatedElement1.classList.add("typewriter-animaton");
+  } else {
+    animatedElement1.classList.remove("typewriter-animaton");
+  }
+
+  if (!animatedElement2.classList.contains("typewriter-animaton")) {
+    animatedElement2.classList.add("typewriter-animaton");
+  } else {
+    animatedElement2.classList.remove("typewriter-animaton");
+  }
+
+  if (!animatedElement3.classList.contains("typewriter-animaton")) {
+    animatedElement3.classList.add("typewriter-animaton");
+  } else {
+    animatedElement3.classList.remove("typewriter-animaton");
+  }
+
+  if (!animatedElement4.classList.contains("typewriter-animaton")) {
+    animatedElement4.classList.add("typewriter-animaton");
+  } else {
+    animatedElement4.classList.remove("typewriter-animaton");
+  }
+
+  if (!animatedElement5.classList.contains("typewriter-animaton")) {
+    animatedElement5.classList.add("typewriter-animaton");
+  } else {
+    animatedElement5.classList.remove("typewriter-animaton");
+  }
+
+  if (!animatedElement6.classList.contains("typewriter-animaton")) {
+    animatedElement6.classList.add("blink-caret-animation");
+  } else {
+    animatedElement6.classList.remove("blink-caret-animation");
+  }
 }
 </script>
 
