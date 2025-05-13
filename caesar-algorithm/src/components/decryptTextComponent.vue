@@ -44,7 +44,6 @@ function encryptText() {
       encryptedText = encryptedText += decryptedLetter;
     } else {
       for (let a = 0; a < encryptionKey; a++) {
-        // Bei Verschlüsseln: indexDecryptedLetter === 25, indexDecryptedLetter = 0;,indexDecryptedLetter++;
         if (indexDecryptedLetter === 0) {
           indexDecryptedLetter = 25;
         } else {
@@ -132,51 +131,4 @@ function validateUserInput() {
   </div>
 </template>
 
-<style scoped>
-h2 {
-  color: var(--imperial-gold);
-}
-
-.encryption-container,
-.encrypyeted-text-container {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-}
-
-.encrypt-text {
-  background-color: var(--royalblue);
-  color: var(--marble-white);
-  font-size: var(--text-font);
-}
-
-.encrypt-text:hover {
-  color: var(--imperial-gold);
-}
-
-.interactive-encryption-elements {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  padding-bottom: 50px;
-}
-
-.choose-encryption-key {
-  height: 34px;
-  border-radius: 5px;
-  background-color: var(--royalblue);
-  color: var(--marble-white);
-}
-
-.encrypted-text {
-  padding-top: 20px;
-  width: 375px;
-}
-
-.error-message {
-  color: var(--red);
-  padding-bottom: 20px;
-}
-</style>
+<style scoped></style>

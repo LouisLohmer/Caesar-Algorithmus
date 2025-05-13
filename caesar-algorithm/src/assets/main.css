@@ -1,5 +1,22 @@
 @import "./base.css";
 
+/* global styles */
+body {
+  color: var(--marble-white);
+  font-size: var(--text-font);
+  margin: 0;
+  font-family: "Caesar Dressing", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.hidden {
+  visibility: hidden;
+  padding: 0;
+  height: 0;
+  width: 0;
+}
+
 button {
   border: none;
   cursor: pointer;
@@ -24,6 +41,7 @@ h2 {
 
 #app {
   background-color: var(--black);
+  overflow-y: hidden;
 }
 
 textarea {
@@ -44,4 +62,53 @@ select {
 
 b {
   color: var(--royalblue);
+}
+
+.encryption-container,
+.encrypyeted-text-container,
+.decryption-container,
+.decrypyeted-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.encrypt-text,
+.decrypt-text {
+  background-color: var(--royalblue);
+  color: var(--marble-white);
+  font-size: var(--text-font);
+}
+
+.encrypt-text:hover {
+  color: var(--imperial-gold);
+}
+
+.interactive-encryption-elements,
+.interactive-decryption-elements {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 50px;
+}
+
+.choose-encryption-key,
+.choose-decryption-key {
+  height: 34px;
+  border-radius: 5px;
+  background-color: var(--royalblue);
+  color: var(--marble-white);
+}
+
+.encrypted-text,
+.decrypted-text {
+  padding-top: 20px;
+  width: 375px;
+}
+
+.error-message {
+  color: var(--red);
+  padding-bottom: 20px;
 }
