@@ -34,6 +34,40 @@ function toggleVisibilityOfStartScreen() {
   } else {
     mainContentContainer.classList.remove("hidden");
   }
+
+  toggleAnimations();
+}
+
+function toggleAnimations() {
+  let firstAnimatedElement = document.getElementById("animated-element");
+  let secondAnimatedElement = document.getElementById("animated-element-2");
+  let thirdAnimatedElement = document.getElementById("animated-element-3");
+  let fourthAnimatedElement = document.getElementById("animated-element-4");
+  let fifthAnimatedElement = document.getElementById("animated-element-5");
+  let sixthAnimatedElement = document.getElementById("animated-element-6");
+
+  if (
+    !firstAnimatedElement.classList.contains("typewriter-animaton") &&
+    !secondAnimatedElement.classList.contains("typewriter-animaton") &&
+    !thirdAnimatedElement.classList.contains("typewriter-animaton") &&
+    !fourthAnimatedElement.classList.contains("typewriter-animaton") &&
+    !fifthAnimatedElement.classList.contains("typewriter-animaton") &&
+    !sixthAnimatedElement.classList.contains("typewriter-animaton")
+  ) {
+    firstAnimatedElement.classList.add("typewriter-animaton");
+    secondAnimatedElement.classList.add("typewriter-animaton");
+    thirdAnimatedElement.classList.add("typewriter-animaton");
+    fourthAnimatedElement.classList.add("typewriter-animaton");
+    fifthAnimatedElement.classList.add("typewriter-animaton");
+    sixthAnimatedElement.classList.add("blink-caret-animation");
+  } else {
+    firstAnimatedElement.classList.remove("typewriter-animaton");
+    secondAnimatedElement.classList.remove("typewriter-animaton");
+    thirdAnimatedElement.classList.remove("typewriter-animaton");
+    fourthAnimatedElement.classList.remove("typewriter-animaton");
+    fifthAnimatedElement.classList.remove("typewriter-animaton");
+    sixthAnimatedElement.classList.remove("blink-caret-animation");
+  }
 }
 </script>
 
