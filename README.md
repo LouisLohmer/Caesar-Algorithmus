@@ -5,15 +5,15 @@ Keep in mind that text in the frontend is written in german, since i'am a german
 
 ## Functionality
 ### Decrypt text
-Write your encrypted text message in the textarea, choose your decryption key with the select-option-field and then click on the button next to it in order to get your decrypted text message.
+Write your encrypted text message in the textarea, choose your decryption key with the select-option-field and then click on the button next to it in order to get your decrypted text message. You can easily copy your result using the copy to clipboard button.
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/84fbf591-09e9-4de8-8dd3-e06a80612c3c" width="90%" height="90%" />
+  <img src="https://github.com/user-attachments/assets/e57c0c3f-5825-445b-a997-85a1b14fbd40" width="90%" height="90%" />
 </div>
 
 ### Encrypt text
-Write your plain text message in the textarea, choose your encryption key with the select-option-field and then click on the button next to it in order to get your encrypted text message.
+Write your plain text message in the textarea, choose your encryption key with the select-option-field and then click on the button next to it in order to get your encrypted text message. You can easily copy your result using the copy to clipboard button.
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/27fc450d-827d-420b-a8e9-04259179a1ab" width="90%" height="90%" />
+  <img src="https://github.com/user-attachments/assets/026277cd-afbc-4fb2-91e2-da2a4ec4b379" width="90%" height="90%" />
 </div>
 
 ## Easter Eggs
