@@ -104,11 +104,36 @@ b {
 
 .encrypted-text,
 .decrypted-text {
-  padding-top: 20px;
   width: 375px;
 }
 
 .error-message {
   color: var(--red);
   padding-bottom: 20px;
+}
+
+.copy-to-clipboard {
+  background-color: var(--transparent);
+  visibility: hidden;
+  padding-left: 0;
+}
+
+.copy-to-clipboard-icon {
+  width: 30px;
+  height: 30px;
+  fill: var(--marble-white);
+}
+
+.result-container {
+  display: flex;
+  align-items: center;
+}
+
+.success-message {
+  background-color: var(--green);
+  padding: 8px 10px 8px 10px;
+  border-radius: 15px;
+  position: relative;
+  right: 110px;
+  top: 40px;
 }
