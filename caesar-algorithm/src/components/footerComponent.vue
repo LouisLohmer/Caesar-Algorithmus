@@ -71,7 +71,7 @@ footer {
 @media only screen and (max-width: 767px) {
   footer {
     flex-direction: column;
-    padding: 20px 15px 20px 15px;
+    padding: 20px 5px 20px 5px;
   }
 
   .repositry-link {

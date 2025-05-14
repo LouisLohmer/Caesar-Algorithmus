@@ -40,6 +40,7 @@ import textComponent from "./components/textComponent.vue";
 @media only screen and (max-width: 767px) {
   .sub-main-content {
     flex-direction: column;
+    gap: 30px;
   }
 }
 

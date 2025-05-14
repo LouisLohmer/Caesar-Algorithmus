@@ -172,4 +172,19 @@ b {
 
 /*Media-Querie for tablets*/
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
+  textarea {
+    width: 300px;
+    height: 150px;
+  }
+
+  .interactive-encryption-elements,
+  .interactive-decryption-elements {
+    width: 70%;
+    gap: 30px;
+  }
+
+  .encrypted-text,
+  .decrypted-text {
+    width: 275px;
+  }
 }
