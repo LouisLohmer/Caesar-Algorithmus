@@ -35,4 +35,15 @@ import textComponent from "./components/textComponent.vue";
   justify-content: center;
   gap: 50px;
 }
+
+/*Media-Querie for smart phones*/
+@media only screen and (max-width: 767px) {
+  .sub-main-content {
+    flex-direction: column;
+  }
+}
+
+/*Media-Querie for tablets*/
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+}
 </style>
