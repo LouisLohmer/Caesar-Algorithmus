@@ -41,7 +41,7 @@
 }
 
 .caesar-cipher-background-image {
-  left: 220px;
+  left: 10%;
   top: 50px;
 }
 .caesar-cipher-background-image:hover,
@@ -52,7 +52,55 @@
 }
 
 .caesar-cipher-background-image-2 {
-  right: 220px;
+  right: 10%;
   top: 50px;
+}
+
+/*Media-Querie for smart phones*/
+@media only screen and (max-width: 767px) {
+  .caesar-cipher-image {
+    width: 45%;
+    height: 45%;
+  }
+
+  .caesar-cipher-background-image-2,
+  .caesar-cipher-background-image {
+    width: 45%;
+    height: 45%;
+  }
+
+  .caesar-cipher-background-image {
+    left: 250px;
+    top: 30px;
+  }
+
+  .caesar-cipher-background-image-2 {
+    right: 250px;
+    top: 30px;
+  }
+}
+
+/*Media-Querie for tablets*/
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .caesar-cipher-image {
+    width: 50%;
+    height: 50%;
+  }
+
+  .caesar-cipher-background-image-2,
+  .caesar-cipher-background-image {
+    width: 50%;
+    height: 50%;
+  }
+
+  .caesar-cipher-background-image {
+    left: 250px;
+    top: 30px;
+  }
+
+  .caesar-cipher-background-image-2 {
+    right: 250px;
+    top: 30px;
+  }
 }
 </style>
