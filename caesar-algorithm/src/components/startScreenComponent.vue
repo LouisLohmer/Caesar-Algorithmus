@@ -70,12 +70,12 @@
   }
 
   .caesar-cipher-background-image {
-    left: 250px;
+    left: 22%;
     top: 30px;
   }
 
   .caesar-cipher-background-image-2 {
-    right: 250px;
+    left: -22%;
     top: 30px;
   }
 }
@@ -94,12 +94,12 @@
   }
 
   .caesar-cipher-background-image {
-    left: 250px;
+    left: 27%;
     top: 30px;
   }
 
   .caesar-cipher-background-image-2 {
-    right: 250px;
+    left: -27%;
     top: 30px;
   }
 }
