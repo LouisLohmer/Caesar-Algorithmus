@@ -48,6 +48,9 @@
   white-space: nowrap;
   letter-spacing: 2px;
   animation: typing 4s steps(40, end);
+  width: 900px;
+  text-wrap: wrap;
+  word-wrap: break-word;
 }
 
 .blink-caret-animation {
@@ -81,6 +84,20 @@ ul {
   }
   50% {
     border-color: var(--imperial-gold);
+  }
+}
+
+/*Media-Querie for smart phones*/
+@media only screen and (max-width: 767px) {
+  .typewriter-animaton {
+    width: 275px;
+  }
+}
+
+/*Media-Querie for tablets*/
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .typewriter-animaton {
+    width: 650px;
   }
 }
 </style>
