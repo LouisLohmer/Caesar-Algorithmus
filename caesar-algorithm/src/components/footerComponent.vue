@@ -66,4 +66,31 @@ footer {
   align-items: center;
   gap: 10px;
 }
+
+/*Media-Querie for smart phones*/
+@media only screen and (max-width: 767px) {
+  footer {
+    flex-direction: column;
+    padding: 20px 5px 20px 5px;
+  }
+
+  .repositry-link {
+    border-left: 0;
+    padding-left: 0;
+  }
+
+  .social-media-link-container {
+    padding: 10px 0 10px 0;
+  }
+
+  .watermark {
+    padding: 10px 0 10px 0;
+    border-bottom: 3px solid var(--marble-white);
+    margin: 0;
+  }
+}
+
+/*Media-Querie for tablets*/
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+}
 </style>
