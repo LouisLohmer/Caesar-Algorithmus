@@ -4,7 +4,6 @@ The **Ceasar-cipher** is a simple method of **encrypting messages, named after J
 Keep in mind that text in the frontend is written in german, since i'am a german developer.
 
 ## Functionality
-### Decrypt text
 Write your encrypted text message in the textarea, choose your decryption key with the select-option-field and then click on the button next to it in order to get your decrypted text message. You can easily copy your result using the copy to clipboard button.
 <div align="center">
   <img src="https://github.com/user-attachments/assets/e57c0c3f-5825-445b-a997-85a1b14fbd40" width="90%" height="90%" />
